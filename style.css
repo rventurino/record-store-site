@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  ul{
+    list-style: none;
+  }
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 25vh;
+    background-color: #e7bd06;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerWrapper{
+  background-color: antiquewhite;
+  width: 55vw;
+  height: 100%;
+}
+  .headerTop{
+    background-color: aqua;
+    
+  }
+  
+  nav .headerNav{
+    background-color: blueviolet;
+  }
+
