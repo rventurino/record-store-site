@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
 /* font-family: 'Roboto', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto&display=swap');
-
+/* font-family: 'Acme', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@600&family=Roboto&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -24,21 +25,24 @@ body {
     left: 0;
     right: 0;
     width: 100%;
-    height: 33vh;
+    height: 290px;
     background-color: #e7bd06;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    font-family: Roboto;
 }
 .headerWrapper{
   width: 55vw;
   height: 100%;
+  min-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
   .headerTop{
-    height: 77.5%;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -52,9 +56,13 @@ body {
     justify-content: center;
 
   }
+  .headertopleft a{
+    height: 100%;
+    width: 100%;
+  }
   .headerTopLeft img{
-    padding: 8px;
-    width: 67%;
+    padding: 3px;
+    width: 150%;
     height: auto;
   }
   .headerTopRight{
@@ -72,7 +80,8 @@ body {
 
   }
   .headerTagLineUpper h1{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: Acme;
+    font-weight: 400;
     text-align: center;
     margin-top: 20px;
     font-size: 35px;
@@ -80,7 +89,7 @@ body {
   }
   
   .headerTagLineLower{
-    font-family: 'Roboto', sans-serif;
+
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -88,29 +97,47 @@ body {
     justify-content: flex-end;
   }
 
+.locationTag{
+  font-family: Roboto;
+  font-weight: 10;
+  }
+.phoneTag{
+  font-family: Roboto;
+  
+}
+
   .headerNav{
     background-color: #e0b808;
     height: 22.5%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+
   }
   .headerNav ul{
     width: 95%;
     height: 90%;
     display: flex;
     flex-direction: row;
-
     align-items: center;
     justify-content: center;
   }
   .headerNav ul li{
-
-    width: 100px;
+    width: 130px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .headerNav ul li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid black;
   }
 
 #mainPage{
@@ -131,6 +158,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.mainHeroOverlay div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
 .mainHeroOverlay h1{
   font-family: 'Roboto', sans-serif;
