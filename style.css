@@ -20,12 +20,12 @@ body {
     list-style: none;
   }
   header{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 290px;
+    height: 275px;
     background-color: #e7bd06;
     display: flex;
     align-items: center;
@@ -34,8 +34,10 @@ body {
     font-family: Roboto;
 }
 .headerWrapper{
+  position: absolute;
+  top: 0px;
   width: 55vw;
-  height: 100%;
+  height: 200px;
   min-width: 800px;
   display: flex;
   flex-direction: column;
@@ -62,7 +64,7 @@ body {
   }
   .headerTopLeft img{
     padding: 3px;
-    width: 150%;
+    width: 135%;
     height: auto;
   }
   .headerTopRight{
@@ -107,8 +109,10 @@ body {
 }
 
   .headerNav{
+    position: absolute;
+    bottom: 0px;
     background-color: #e0b808;
-    height: 22.5%;
+    height: 50px;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -166,13 +170,14 @@ body {
   }
 
 #mainPage{
-  margin-top: 33vh;
+  position: relative;
+  top: 0px;
   
 }
 
 .mainHero{
   width: 100vw;
-  height: 80vh;
+  height: 75vh;
   background-image: url(resources/img/Record\ Store\ Hero.jpg);
   background-size: cover;
 }
@@ -195,6 +200,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: white;
   font-size: 50px;
+  min-width: 950px;
   width: 55vw;
   height: 100%;
   text-align: center;
