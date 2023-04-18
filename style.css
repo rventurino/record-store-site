@@ -33,6 +33,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.button:hover{
+  background-color: #e7bd06;
+  color: black;
 }
 
 #mainPage{

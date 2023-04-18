@@ -1,0 +1,73 @@
+/* font-family: 'Josefin Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto&display=swap');
+/* font-family: 'Acme', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@600&family=Roboto&display=swap');
+/*font-family: 'Play', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@600&family=Play&family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+    height: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footertop{
+    width: 950px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #e7bd06;
+    font-family: Roboto;
+}
+
+.footertop a{
+    height: 35px;
+    width: 35px;
+}
+.footertop a img{
+    height: 100%;
+    width: auto;
+}
+
+.footerbottom{
+    background-color: white;
+    width: 100vw;
+    height: 440px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footerbottomwrapper{
+    width: 950px;
+    height: 405px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.footerbottom h1{
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.footerbottom p{
+    font-family: Roboto;
+}
+.footerbottom span{
+    font-weight: bold;
+}
+
