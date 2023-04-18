@@ -22,8 +22,8 @@ body {
   
 
 #mainPage{
-  position: relative;
-  top: 0px;
+  position: absolute;
+  top: 275px;
   
 }
 
@@ -56,4 +56,51 @@ body {
   width: 55vw;
   height: 100%;
   text-align: center;
+}
+
+#mainpageinfo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  font-family: Roboto;
+}
+
+#mainpageinfowrapper{
+  width: 950px;
+}
+
+.infobox{
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.infoboxheader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.infoboxheader{
+  font-size: 20px;
+
+}
+.infoboxlower{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.infoboxleft{
+  margin-right: 50px;
+  width: 450px;
+}
+.infoboxright{
+  width: 450px;
+}
+.infoboxright img{
+  width: 100%;
+  height: auto;
 }
