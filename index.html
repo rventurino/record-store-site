@@ -7,10 +7,13 @@
     <link rel="stylesheet" type="text/css" href="headerNav.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="footer.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
     <title>Attic Record Store Inc | Music | Pittsburgh, PA</title>
     <!---https://www.atticrecordstoreinc.com/-->
 </head>
 <body>
+    
     <header>
         <div class="headerWrapper">
             <div class="headerTop" >
@@ -121,6 +124,7 @@
                     </div>
                     <div class="findus footersection">
                         <h1>Find Us</h1>
+                        <div id="map"></div>
                     </div>
                     <div class="contactus footersection">
                         <h1>Contact Us </h1>
@@ -137,6 +141,16 @@
             </div>
         </footer>
     </section>
-
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoicnlhbnZlbnR1cmlubyIsImEiOiJjbGdvMXRmaXQwM2NoM2RzOHBtdHRpa2ZnIn0.TD2RDUFvN4mQEHTKj2f-Qw';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+            style: 'mapbox://styles/ryanventurino/clgo2uqq3007y01nyecqhexqa', // style URL
+            center: [-79.9747218887018, 40.48069876156457, ], // starting position [lng, lat]
+            zoom: 18 // starting zoom
+        });
+    </script>
 </body>
+
 </html>
