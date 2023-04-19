@@ -6,7 +6,7 @@
 /* font-family: 'Acme', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@600&family=Roboto&display=swap');
 /*font-family: 'Play', sans-serif;*/
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@600&family=Play&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@400&family=Play&family=Roboto&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -50,14 +50,15 @@ body {
 
 .mainHero{
   width: 100vw;
-  height: 75vh;
-  background-image: url(resources/img/Record\ Store\ Hero.jpg);
-  background-size: cover;
+  height: 800px;
+  background-image: url(resources/img/heroBG.webp);
+  background-size:cover;
+  background-position: center;
 }
 .mainHeroOverlay{
   width: 100%;
   height: 100%;
-  background-color: rgba(49, 48, 48, 0.801);
+  background-color: rgba(12, 12, 22, 0.719);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,13 +71,14 @@ body {
 
 }
 .mainHeroOverlay h1{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Play', sans-serif;
   color: white;
   font-size: 50px;
   min-width: 950px;
   width: 55vw;
   height: 100%;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 #mainpageinfo{
