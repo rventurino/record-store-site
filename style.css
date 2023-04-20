@@ -12,6 +12,7 @@
   padding: 0;
 }
 body {
+    overflow: overlay;/*https://stackoverflow.com/questions/33606565/is-it-possible-to-calculate-the-viewport-width-vw-without-scrollbar*/
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -88,7 +89,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   font-family: Roboto;
 }
 

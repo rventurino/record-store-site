@@ -25,13 +25,14 @@ footer{
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
 }
 
 .footertop{
     width: 950px;
     height: 60px;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,7 +61,7 @@ footer{
 
 .footerbottomwrapper{
     width: 950px;
-    height: 405px;
+    height: 370px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100%;
@@ -99,3 +100,25 @@ footer{
     width: 300px;
 }
 
+.legalDisclaimer{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+footer ul li{
+    margin-right: 4px;
+}
