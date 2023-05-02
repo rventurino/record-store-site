@@ -160,3 +160,38 @@ header{
     margin: 0;
     padding: 0;
   }
+
+  .caret {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.5s ease;
+  }
+  .line{
+    width: 5px;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    border: .25px solid black;
+  }
+  .caret:hover{
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
+  .caret:hover * {
+      border-color: white;
+  }
+  
+  .left{
+    transform: rotate(45deg);
+    right: 37%;
+  }
+  .right{
+    transform: rotate(135deg);
+    left: 37%;
+  }
+  
+  

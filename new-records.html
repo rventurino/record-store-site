@@ -4,9 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="headerNav.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="newRecords.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <title>Attic Record Store Inc | Music | Pittsburgh, PA</title>
+    <!---https://www.atticrecordstoreinc.com/-->
 </head>
 <body>
     
+    <header>
+        <div class="headerWrapper">
+            <div class="headerTop" >
+                    <div class="headerTopLeft"><a href="index.html"><img src="resources/img/atticRecords.webp" alt="record logo"></a></div>
+                    <div class="headerTopRight">
+                        <div class="headerTagLineUpper">
+                            <h1>We buy collections daily, top prices paid!</h1>
+                        </div>
+                        <div class="headerTagLineLower">
+                            <h3 class="locationTag">Minutes from Downtown Pittsburgh in Millvale, PA</h3>
+                            <h3 class="phoneTag">412-821-8484</h3>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <nav class="headerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new-records.html">New Records <img src="/resources/img/arrow-down-sign-to-navigate.png" alt="" class="arrowdown"></a><div class="caret">
+                    <div class="line left"></div>
+                    <div class="line right"></div>
+                  </div>
+                  </li>
+                <li><a href="#">Used Records <img src="/resources/img/arrow-down-sign-to-navigate.png" alt="" class="arrowdown"></a><div class="caret">
+                    <div class="line left"></div>
+                    <div class="line right"></div>
+                  </div>
+                  </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="mainPage">
+        <div class="Hero">
+            <div class="HeroNewRecords newRecords">
+                <div class="HeroOverlay">
+                    <div>
+                        <h1>Buy Your Records From A Knowledgeable Staff</h1>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="newRecordsInfo">
+            <div id="newrecordsinfowrapper">
+                <div id="newRecordsLeft">
+                    <div id="newRecordsTopLeft">
+                        <h1>Come Visit The Area's Widest Selection Of Vinyl </h1>
+                        <h1>Many Genres & Tons of New & Used LPs, 45s & 12-inch singles. Come Find What You're Looking For. A Music Lover's Dream. </h1>
+                    </div>
+                    <p>Whether you're in the market for 45s, 33s or 12-inch singles, Attic Record Store has new records coming in daily. In business since 1980, we're a family, locally owned and operated record store offering excellent service to our music loving community.</p>
+                    <div id="newRecordsLeftImg">
+                        <img src="resources/img/newRecordsLeft.webp" alt="">
+                    </div>
+                </div>
+                <div id="newRecordsRight">
+                    <div id="newRecordsTopRight">
+                        <h1>Contact our Knowledgeable and courteous staff.</h1>
+                        <span>412-821-8484</span>
+                    </div>
+                    <p>We're in business since 1980.</p>
+                    <div class="newrecordsinfoboxright">
+                        <video src="resources/video/attic-record-store-inc-gcrbr8zma-079874.mp4"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footertop">
+                <a href="#"><img src="resources/img/Facebook-Logo-PNG-Transparent-Like-17.png" alt=""></a>
+                <h1>412-821-8484</h1>
+            </div>
+            <div class="footerbottom">
+                <div class="footerbottomwrapper">
+                    <div class="fbfeed footersection">
+                        <h1>Our Facebook Feed</h1>
+                        <div class="footsectionwrap">
+                            <iframe name="f2f2f3e115da48" width="500px" height="274px" data-testid="fb:page Facebook Social Plugin"
+                                title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true"
+                                scrolling="no" allow="encrypted-media"
+                                src="https://www.facebook.com/v2.8/plugins/page.php?adapt_container_width=true&amp;app_id=1822295708016537&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df24ef0a7f44c8b%26domain%3Dwww.atticrecordstoreinc.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.atticrecordstoreinc.com%252Ff36ef5e665e6d8%26relation%3Dparent.parent&amp;container_width=306&amp;height=274&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FAttic-Record-Store-Pittsburgh-377028758975614%2F&amp;locale=en_US&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=500"
+                                style="border: none; visibility: visible; width: 306px; height: 274px;" class="" id="ae_iframe_3pwf10uu"></iframe>
+
+                        </div>
+                    </div>
+                    <div class="findus footersection">
+                        <h1>Find Us</h1>
+                        <div class="footsectionwrap">
+                            <div id="map"></div>
+                            <br>
+                            <a href="https://goo.gl/maps/kjJzDR1QfLcVWu4n6" target=”_blank” class="button">Get Directions</a>
+                        </div>
+                    </div>
+                    <div class="contactus footersection">
+                        <div class="footsectionwrap">
+                            <h1>Contact Us </h1>
+                            <p><span>Attic Record Store Inc</span></p>
+                            <p>513 Grant Ave</p>
+                            <p>Pittsburgh, PA 15209</p>
+                            <p>atticrecords@verizon.net</p>
+                            <p><span>Phone: </span>412-821-8484</p>
+                            <p><span>Contact: </span>Fred Bohn, Owner</p>
+                            <br><br>
+                            <img src="resources/img/creditCards.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="legalDisclaimer">
+                <ul>
+                    <li>Privacy Policy |</li>
+                    <li>Do Not Share My Information |</li>
+                    <li>Conditions of Use |</li>
+                    <li>Notice and Take Down Policy |</li>
+                    <li>Website Accsessibility Policy</li>
+                </ul>
+                <p>© 2023 The content on this website is owned by us and our licensors. Do not copy any content (including images) without our consent.</p>
+            </div>
+        </footer>
+    </section>
+<script src="script.js"></script>
 </body>
+
 </html>

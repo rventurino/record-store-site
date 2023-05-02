@@ -51,14 +51,21 @@ body {
   
 }
 
-.mainHero{
+.HeroMain{
   width: 100vw;
   height: 800px;
   background-image: url(resources/img/heroBG.webp);
   background-size:cover;
   background-position: center;
 }
-.mainHeroOverlay{
+.HeroNewRecords{
+  width: 100vw;
+  height: 600px;
+  background-image: url(resources/img/newRecordsHero.webp);
+  background-size:cover;
+  background-position: center;
+}
+.HeroOverlay{
   width: 100%;
   height: 100%;
   background-color: rgba(12, 12, 22, 0.719);
@@ -66,14 +73,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.mainHeroOverlay div{
+.HeroOverlay div{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
 }
-.mainHeroOverlay h1{
+.HeroOverlay h1{
   font-family: 'Play', sans-serif;
   color: white;
   font-size: 50px;

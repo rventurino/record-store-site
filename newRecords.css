@@ -1,0 +1,90 @@
+
+/* font-family: 'Josefin Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Roboto&display=swap');
+/* font-family: 'Acme', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@600&family=Roboto&display=swap');
+/*font-family: 'Play', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@400&family=Play&family=Roboto&display=swap');
+
+
+#newRecordsInfo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    font-family: Roboto;
+    height: 550px;
+
+  }
+  
+  #newrecordsinfowrapper{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 950px;
+  }
+
+  #newrecordsinfowrapper img{
+    width: 90%;
+    height: auto;
+  }
+
+  #newRecordsLeft, #newRecordsRight{
+    padding: 20px;
+  }
+  #newRecordsTopLeft{
+    margin-bottom: 22px;
+  }
+  #newRecordsLeft h1{
+    font-family: 'Play', sans-serif;
+    font-size: 25px;
+  }
+  #newRecordsLeft p{
+    margin-bottom: 40px;
+  }
+  #newRecordsLeftImg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #newRecordsRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #newRecordsTopRight{
+    width: 300px;
+    height: 175px;
+    background-color: #e7bd06;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #newRecordsTopRight h1{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 25px;
+  }
+  #newRecordsTopRight span{
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .newrecordsinfoboxright{
+    width: 300px;
+    height: auto;
+  }
+  .newrecordsinfoboxright video{
+    width: 100%;
+    height: auto;
+  }
