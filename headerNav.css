@@ -138,15 +138,19 @@ header{
   }
   .headerNav ul li:nth-child(2){
     width: 150px;
+    position: relative;
 
   }
   .headerNav ul li:nth-child(3){
     width: 150px;
-
+    position: relative;
   }
   .headerNav ul li:nth-child(4){
-    width: 100px;
+    width: 150px;
 
+  }
+  .headerNav ul li:nth-child(5){
+    width: 100px;
   }
   .headerNav ul li a{
     height: 100%;
@@ -161,6 +165,53 @@ header{
     padding: 0;
   }
 
+  #newRecordsDropdown{
+    width: 130px;
+    position: absolute;
+    top: 45px;
+    background-color: black;
+    color: white;
+    left: 0px;
+  }
+  #newRecordsDropdown li{
+    width: 100%;
+    height: 100%;
+  }
+  #usedRecordsDropdown{
+    width: 75px;
+    height: 150px;
+    position: absolute;
+    top: 45px;
+    background-color: #e0b808;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  #usedRecordsDropdown li{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: #e0b808;
+    color: black;
+    
+  }
+  #usedRecordsDropdown li a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 5px;
+    transition: 0.1s;
+  }
+  #usedRecordsDropdown li:hover{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
   .caret {
     width: 15px;
     height: 15px;
