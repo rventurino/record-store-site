@@ -18,16 +18,23 @@ map.addControl(new mapboxgl.FullscreenControl());
 //used record HTML elements
 const usedRecordsDropdown = document.getElementById('usedRecordsDropdown');
 const usedRecordsNav = document.getElementById('usedRecordsNav');
+const caretused = document.getElementById('caretused');
+const caretusedlineleft = document.getElementById('caretusedlineleft');
+const caretusedlineright = document.getElementById('caretusedlineright');
 
 //used record controls
 usedRecordsNav.addEventListener('mouseover', () => {
     usedRecordsDropdown.style.display = 'flex';
+    caretused.style.transform = 'rotate(180deg)';
+    caretusedlineleft.style.border = '.25px solid white';
+    caretusedlineright.style.border = '.25px solid white';
   });
   
   usedRecordsNav.addEventListener('mouseout', () => {
     usedRecordsDropdown.style.display = 'none';
     caretused.style.transform = 'rotate(0deg)';
-
+    caretusedlineleft.style.border = '.25px solid black';
+    caretusedlineright.style.border = '.25px solid black';
   });
 
 //used record HTML elements

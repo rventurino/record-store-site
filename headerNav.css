@@ -160,7 +160,6 @@ header{
     justify-content: center;
     text-decoration: none;
     color: inherit;
-
     margin: 0;
     padding: 0;
   }
@@ -213,7 +212,10 @@ header{
     align-items: center;
     justify-content: flex-start;
   }
-  .caret {
+
+
+
+  #caretnew {
     width: 15px;
     height: 15px;
     display: flex;
@@ -224,28 +226,46 @@ header{
   }
   #caretused {
     width: 15px;
-    height: 15px;
+    height: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    transition: transform 0.5s ease;
-    background-color: pink;
+
+    transition: transform 0.3s ease;
+
   }
-  .line{
+  #caretusedlineleft{
+    width: 6px;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 5.55px;
+    border: .25px solid black;
+  }
+  #caretusedlineright{
+    width: 6px;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 37%;
+    border: .05px solid black;
+  }
+  
+  
+  .left{
     width: 5px;
     border-radius: 10px;
     position: absolute;
+    transform: rotate(45deg);
+    right: 5.55px;
     border: .25px solid black;
   }
-  
-  .left{
-    transform: rotate(45deg);
-    right: 37%;
-  }
   .right{
+    width: 5px;
+    border-radius: 10px;
+    position: absolute;
     transform: rotate(135deg);
     left: 37%;
+    border: .25px solid black;
   }
   
   
