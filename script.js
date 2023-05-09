@@ -12,3 +12,33 @@ map.addControl(new mapboxgl.NavigationControl());
 
 //Add full screen control
 map.addControl(new mapboxgl.FullscreenControl());
+
+//nav bar controls 
+
+//used record HTML elements
+const usedRecordsDropdown = document.getElementById('usedRecordsDropdown');
+const usedRecordsNav = document.getElementById('usedRecordsNav');
+
+//used record controls
+usedRecordsNav.addEventListener('mouseover', () => {
+    usedRecordsDropdown.style.display = 'flex';
+  });
+  
+  usedRecordsNav.addEventListener('mouseout', () => {
+    usedRecordsDropdown.style.display = 'none';
+    caretused.style.transform = 'rotate(0deg)';
+
+  });
+
+//used record HTML elements
+const newRecordsDropdown = document.getElementById('newRecordsDropdown');
+const newRecordsNav = document.getElementById('newRecordsNav');
+//used record controls
+newRecordsNav.addEventListener('mouseover', () => {
+    newRecordsDropdown.style.display = 'flex';
+  });
+  
+  newRecordsNav.addEventListener('mouseout', () => {
+    newRecordsDropdown.style.display = 'none';
+  });
+

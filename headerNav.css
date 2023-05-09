@@ -172,6 +172,7 @@ header{
     background-color: black;
     color: white;
     left: 0px;
+    display: none;
   }
   #newRecordsDropdown li{
     width: 100%;
@@ -184,7 +185,7 @@ header{
     top: 45px;
     background-color: #e0b808;
     left: 0px;
-    display: flex;
+    display: none;
     flex-direction: column;
   }
   #usedRecordsDropdown li{
@@ -221,19 +222,21 @@ header{
     position: relative;
     transition: transform 0.5s ease;
   }
+  #caretused {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.5s ease;
+    background-color: pink;
+  }
   .line{
     width: 5px;
-    background-color: black;
     border-radius: 10px;
     position: absolute;
     border: .25px solid black;
-  }
-  .caret:hover{
-    cursor: pointer;
-    transform: rotate(180deg);
-  }
-  .caret:hover * {
-      border-color: white;
   }
   
   .left{
