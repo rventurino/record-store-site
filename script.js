@@ -19,33 +19,35 @@ map.addControl(new mapboxgl.FullscreenControl());
 const usedRecordsDropdown = document.getElementById('usedRecordsDropdown');
 const usedRecordsNav = document.getElementById('usedRecordsNav');
 const caretused = document.getElementById('caretused');
-const caretusedlineleft = document.getElementById('caretusedlineleft');
-const caretusedlineright = document.getElementById('caretusedlineright');
+
 
 //used record controls
 usedRecordsNav.addEventListener('mouseover', () => {
     usedRecordsDropdown.style.display = 'flex';
     caretused.style.transform = 'rotate(180deg)';
-    caretusedlineleft.style.border = '.25px solid white';
-    caretusedlineright.style.border = '.25px solid white';
+    caretused.style.color = 'white';
   });
   
   usedRecordsNav.addEventListener('mouseout', () => {
     usedRecordsDropdown.style.display = 'none';
     caretused.style.transform = 'rotate(0deg)';
-    caretusedlineleft.style.border = '.25px solid black';
-    caretusedlineright.style.border = '.25px solid black';
+    caretused.style.color = 'black';
   });
 
-//used record HTML elements
+//new record HTML elements
 const newRecordsDropdown = document.getElementById('newRecordsDropdown');
 const newRecordsNav = document.getElementById('newRecordsNav');
-//used record controls
+const caretnew = document.getElementById('caretnew');
+//new record controls
 newRecordsNav.addEventListener('mouseover', () => {
     newRecordsDropdown.style.display = 'flex';
+    caretnew.style.transform = 'rotate(180deg)';
+    caretnew.style.color = 'white';
   });
   
   newRecordsNav.addEventListener('mouseout', () => {
     newRecordsDropdown.style.display = 'none';
+    caretnew.style.transform = 'rotate(0deg)';
+    caretnew.style.color = 'black';
   });
 
