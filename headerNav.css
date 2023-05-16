@@ -10,6 +10,25 @@
   padding: 0;
 }
 
+.move-animation {
+  animation: movedown 400ms ease-in;
+}
+
+@keyframes movedown {
+  0% {
+      top: 25px;
+  }
+  30% {
+      top: 40px;
+  }
+  50%{
+    top: 42px;
+  }
+  100% {
+      top: 45px;
+}
+}
+
 header{
     position: fixed;
     top: 0;
@@ -123,9 +142,9 @@ header{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0;
-    padding: 0;
+    padding-right: 10px;
     transition: 0.3s;
   }
   .headerNav ul li:hover{
@@ -168,9 +187,10 @@ header{
   #newRecordsDropdown{
     width: 100%;
     position: absolute;
-    top: 45px;
-    background-color: black;
-    color: white;
+    top: 25px;
+    background-color: #e7bd06;
+    color: black;
+
     left: 0px;
     display: none;
   }
@@ -180,16 +200,16 @@ header{
   }
   #newRecordsDropdown li:hover{
     cursor: pointer;
-    background-color: #e7bd06;
-    color: black;
+    background-color: black;
+    color: white;
   }
   #usedRecordsDropdown{
     width: 75px;
     height: 150px;
     position: absolute;
-    top: 45px;
+    top: 25px;
     background-color: #e0b808;
-    left: 0px;
+    left: 5px;
     display: none;
     flex-direction: column;
   }

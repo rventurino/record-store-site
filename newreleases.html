@@ -17,32 +17,43 @@
     
     <header>
         <div class="headerWrapper">
-            <div class="headerTop" >
-                    <div class="headerTopLeft"><a href="index.html"><img src="resources/img/atticRecords.webp" alt="record logo"></a></div>
-                    <div class="headerTopRight">
-                        <div class="headerTagLineUpper">
-                            <h1>We buy collections daily, top prices paid!</h1>
-                        </div>
-                        <div class="headerTagLineLower">
-                            <h3 class="locationTag">Minutes from Downtown Pittsburgh in Millvale, PA</h3>
-                            <h3 class="phoneTag">412-821-8484</h3>
-                        </div>
+            <div class="headerTop">
+                <div class="headerTopLeft"><a href="index.html"><img src="resources/img/atticRecords.webp"
+                            alt="record logo"></a></div>
+                <div class="headerTopRight">
+                    <div class="headerTagLineUpper">
+                        <h1>We buy collections daily, top prices paid!</h1>
                     </div>
+                    <div class="headerTagLineLower">
+                        <h3 class="locationTag">Minutes from Downtown Pittsburgh in Millvale, PA</h3>
+                        <h3 class="phoneTag">412-821-8484</h3>
+                    </div>
+                </div>
             </div>
         </div>
         <nav class="headerNav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="new-records.html">New Records <img src="/resources/img/arrow-down-sign-to-navigate.png" alt="" class="arrowdown"></a><div class="caret">
-                    <div class="line left"></div>
-                    <div class="line right"></div>
-                  </div>
-                  </li>
-                <li><a href="#">Used Records <img src="/resources/img/arrow-down-sign-to-navigate.png" alt="" class="arrowdown"></a><div class="caret">
-                    <div class="line left"></div>
-                    <div class="line right"></div>
-                  </div>
-                  </li>
+                <li id="newRecordsNav"><a href="new-records.html">New Records</a>
+
+                        <i id ="caretnew" class="fa-solid fa-angle-down"></i>
+
+                    <ul id="newRecordsDropdown">
+                        <li><a href="#">New Releases</a></li>
+                    </ul>
+                </li>
+                
+                <li id="usedRecordsNav"><a href="#">Used Records </a>
+
+                            <i id ="caretused" class="fa-solid fa-angle-down"></i>
+
+
+                    <ul id="usedRecordsDropdown">
+                        <li><a href="#">CDs</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Buying</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>

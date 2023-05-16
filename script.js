@@ -24,12 +24,16 @@ const caretused = document.getElementById('caretused');
 //used record controls
 usedRecordsNav.addEventListener('mouseover', () => {
     usedRecordsDropdown.style.display = 'flex';
+    usedRecordsDropdown.classList.add('move-animation');
+    usedRecordsDropdown.style.top = '45px';
     caretused.style.transform = 'rotate(180deg)';
     caretused.style.color = 'white';
+
   });
   
   usedRecordsNav.addEventListener('mouseout', () => {
     usedRecordsDropdown.style.display = 'none';
+    usedRecordsDropdown.classList.remove('move-animation');
     caretused.style.transform = 'rotate(0deg)';
     caretused.style.color = 'black';
   });
@@ -41,12 +45,15 @@ const caretnew = document.getElementById('caretnew');
 //new record controls
 newRecordsNav.addEventListener('mouseover', () => {
     newRecordsDropdown.style.display = 'flex';
+    newRecordsDropdown.classList.add('move-animation');
+    newRecordsDropdown.style.top = '45px';
     caretnew.style.transform = 'rotate(180deg)';
     caretnew.style.color = 'white';
   });
   
   newRecordsNav.addEventListener('mouseout', () => {
     newRecordsDropdown.style.display = 'none';
+    newRecordsDropdown.classList.remove('move-animation');
     caretnew.style.transform = 'rotate(0deg)';
     caretnew.style.color = 'black';
   });
