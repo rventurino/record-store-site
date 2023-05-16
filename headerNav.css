@@ -10,8 +10,13 @@
   padding: 0;
 }
 
+.current{
+  color: white !important;
+  background-color: black !important;
+}
+
 .move-animation {
-  animation: movedown 400ms ease-in;
+  animation: movedown 300ms ease-in;
 }
 
 @keyframes movedown {
@@ -47,7 +52,8 @@ header{
 .headerWrapper{
   position: absolute;
   top: 0px;
-  width: 950px;
+  width: 57vw;
+  min-width: 900px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -82,6 +88,7 @@ header{
     width: 70%;
     display: flex;
     flex-direction: column;
+
   }
   .headerTagLineUpper{
     height: 50%;
@@ -94,19 +101,24 @@ header{
   .headerTagLineUpper h1{
     font-family: Acme;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     margin-top: 20px;
-    font-size: 35px;
-    
+    font-size: 40px;
+    position: relative;
+    right: 40px;
+    bottom: 10px;
   }
   
   .headerTagLineLower{
-
+    font-size: 14px;
     height: 50%;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: flex-end;
+    position: relative;
+    right: 120px;
+    top: 20px;
   }
 
 .locationTag{

@@ -58,3 +58,15 @@ newRecordsNav.addEventListener('mouseover', () => {
     caretnew.style.color = 'black';
   });
 
+//Highlight the current page in the nav bar, css located in headernav.css
+
+  const current = 0;
+  const navbar = document.getElementById('navbar');
+  var url = location.href.split('/');
+  for (var i = 0; i < navbar.children.length; i++) {
+    console.log(navbar.children[i])
+      if (navbar.children[i].href === url) {
+          current = i;
+      }
+  }
+  navbar.children[current].classList.add('current');
