@@ -72,6 +72,13 @@ body {
   background-size:cover;
   background-position: center;
 }
+.HeroUsedRecords{
+  width: 100vw;
+  height: 650px;
+  background-image: url(resources/img/usedrecordshero.webp);
+  background-size:cover;
+  background-position: center;
+}
 
 .HeroOverlay{
   width: 100%;
