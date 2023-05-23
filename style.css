@@ -20,6 +20,9 @@ body {
     box-sizing: border-box;
   }
 
+  .currentcaret{
+    color: white !important;
+  }
 
   ul{
     list-style: none;
